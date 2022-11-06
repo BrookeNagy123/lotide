@@ -15,4 +15,3 @@ const eqArrays = function(arrOne,arrTwo) {
 
 module.exports = eqArrays;
 
-
