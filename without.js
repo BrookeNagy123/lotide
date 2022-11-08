@@ -21,17 +21,17 @@ const assertArraysEqual = function(arrOne, arrTwo) {
 };
 
 
-const without = function(source, itemsToRemove){
-  newArr = source.filter((i) => itemsToRemove.indexOf(i) === -1)
+const without = function(source, itemsToRemove) {
+  let newArr = source.filter((i) => itemsToRemove.indexOf(i) === -1);
   return newArr;
-}
+};
 
 
 /*Test Cases Below */
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
-console.log(without(["lighthouse", "hello", "world", "lighthouse"],["lighthouse"]))
+console.log(without([1, 2, 3], [1])); // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
+console.log(without(["lighthouse", "hello", "world", "lighthouse"],["lighthouse"]));
 
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
