@@ -23,16 +23,16 @@ const assertArraysEqual = function(arrOne, arrTwo) {
 
 const letterPositions = function(sentence) {
   let results = {};
-  for(let i = 0; i < sentence.length; i++){
-  if (sentence[i] !== " ") {
-    if(!results[sentence[i]]){
-      results[sentence[i]] = [i];
-    } else {
+  for (let i = 0; i < sentence.length; i++) {
+    if (sentence[i] !== " ") {
+      if (!results[sentence[i]]) {
+        results[sentence[i]] = [i];
+      } else {
       //Help from Mentor Below the ... means to copy from the array and then add the i to it)
-      results[sentence[i]] = [...results[sentence[i]], i]
+        results[sentence[i]] = [...results[sentence[i]], i];
+      }
+    }
   }
- }
-}
   return results;
 };
 
