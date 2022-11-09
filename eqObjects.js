@@ -52,3 +52,5 @@ const cd2 = { c: "1", d: ["2", 3, 4] };
 
 console.log(eqObjects(cd, dc)); // => true
 console.log(eqObjects(cd, cd2)); // => false
+
+module.exports = eqObjects;
