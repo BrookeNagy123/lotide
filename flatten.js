@@ -34,3 +34,5 @@ const flatten = function(array) {
 
 const array = ["A", [["B", ["C"]], [[["D"]], "E"]]];
 console.log(flatten(array));
+
+module.exports = flatten;
