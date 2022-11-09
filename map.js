@@ -30,6 +30,7 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
+module.exports = map;
 
 /* Further Test Cases Needed
 const words = ["ground", "control", "to", "major", "tom"];
