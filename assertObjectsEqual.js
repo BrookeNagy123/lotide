@@ -38,8 +38,10 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
+// A function that takes in 2 objects and returns true if they are equal and false otherwise.
 
 const assertObjectsEqual = function(actual, expected) {
+  //Inspect allows us to see the information inside the object instead of the terminal printing Object Object.
   const inspect = require('util').inspect;
   let objectsEqual = eqObjects(actual, expected);
   if (objectsEqual === true) {
