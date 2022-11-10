@@ -6,6 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// A function that takes in an object and a value and returns the first key that corresponds to that value.
 
 const findKeyByValue = function(object, value) {
   return Object.keys(object).find(key => object[key] === value);
