@@ -21,14 +21,18 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
+// A function that takes in a string and returns all indices of letter positions in the string.
+
 const letterPositions = function(sentence) {
   let results = {};
+  // Loop the sentence.
   for (let i = 0; i < sentence.length; i++) {
+    //Ignore the spaces.
     if (sentence[i] !== " ") {
       if (!results[sentence[i]]) {
         results[sentence[i]] = [i];
       } else {
-      //Help from Mentor Below the ... means to copy from the array and then add the i to it)
+      //Help from Mentor below the ... means to copy from the array and then add the i to it).
         results[sentence[i]] = [...results[sentence[i]], i];
       }
     }
