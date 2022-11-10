@@ -20,8 +20,10 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
+//A function that takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array.
 
 const without = function(source, itemsToRemove) {
+  //Mentor Help Below: Filter the source. Check if the items to remove has an index of -1. If it does we do not include it in the new array.
   let newArr = source.filter((i) => itemsToRemove.indexOf(i) === -1);
   return newArr;
 };
