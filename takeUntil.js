@@ -20,13 +20,17 @@ const assertArraysEqual = function(arrOne, arrTwo) {
   }
 };
 
+// A function that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback.
 
 const takeUntil = function(array, callback) {
   let results = [];
+  //Loop array
   for (let i = 0; i < array.length; i++) {
+    //If the array index is not equal to the callback criteria push the array index to results.
     if (!callback(array[i])) {
       results.push(array[i]);
     } else {
+      //Need to have return results here to break the loop when the callback criteria returns true.
       return results;
     }
   }
